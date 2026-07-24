@@ -1,0 +1,26 @@
+{
+  "name": "design-system-stats",
+  "version": "1.0.0",
+  "description": "Collect design system statistics from a GitHub organization",
+  "main": "index.js",
+  "scripts": {
+    "find-adopters": "bash find-adopters.sh > adopting-repos.txt",
+    "scan-org": "bash scan-org.sh adopting-repos.txt",
+    "summarize": "bash generate-summary-table.sh > summary.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ty2k/design-system-stats.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "Apache-2.0",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ty2k/design-system-stats/issues"
+  },
+  "homepage": "https://github.com/ty2k/design-system-stats#readme",
+  "dependencies": {
+    "react-scanner": "^1.2.0"
+  }
+}

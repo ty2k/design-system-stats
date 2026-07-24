@@ -1,5 +1,3 @@
-# find-adopters.sh
-
 #!/usr/bin/env bash
 # Requires: gh CLI (authenticated), jq
 # Usage: bash find-adopters.sh

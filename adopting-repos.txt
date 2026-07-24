@@ -1,4 +1,3 @@
-Searching for repos in 'bcgov' that use '@bcgov/design-system-react-components'...
 bcgov/CONN-TAP
 bcgov/Capstone-2026
 bcgov/EPIC.search

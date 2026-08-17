@@ -40,12 +40,11 @@ async function findReactVersions(directory, relativeDirectory = ".") {
 
   for (const entry of entries) {
     if (entry.isDirectory() && !ignoredDirectories.has(entry.name)) {
-      versions.push(
-        ...(await findReactVersions(
-          path.join(directory, entry.name),
-          path.join(relativeDirectory, entry.name),
-        )),
+      const childVersions = await findReactVersions(
+        path.join(directory, entry.name),
+        path.join(relativeDirectory, entry.name),
       );
+      for (const v of childVersions) versions.push(v);
     }
 
     if (entry.isFile() && entry.name === "package.json") {

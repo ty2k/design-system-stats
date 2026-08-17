@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-// Requires: npm install -g react-scanner
 // Usage: node scan-repo.mjs <path-to-repo>
 import scanner from "react-scanner";
 import { readdir, readFile } from "fs/promises";

@@ -30,17 +30,18 @@ while IFS= read -r REPO || [[ -n "$REPO" ]]; do
   echo "▶ Cloning $REPO..."
   if ! gh repo clone "$REPO" "$CLONE_PATH" -- --depth=1 --quiet 2>/dev/null; then
     echo "  ⚠ Skipping $REPO (clone failed)"
-    echo '{}' > "$RESULT_FILE"
+    echo '{"reactVersions":[],"components":{}}' > "$RESULT_FILE"
     continue
   fi
 
   echo "  Scanning..."
   if node "$SCRIPT_DIR/scan-repo.mjs" "$CLONE_PATH" > "$RESULT_FILE" 2>/dev/null; then
-    COMPONENT_COUNT=$(jq 'keys | length' "$RESULT_FILE")
-    echo "  ✔ Found $COMPONENT_COUNT component(s)"
+    COMPONENT_COUNT=$(jq '.components | keys | length' "$RESULT_FILE")
+    REACT_VERSION_COUNT=$(jq '.reactVersions | length' "$RESULT_FILE")
+    echo "  ✔ Found $COMPONENT_COUNT component(s), $REACT_VERSION_COUNT React declaration(s)"
   else
     echo "  ⚠ Scan failed for $REPO"
-    echo '{}' > "$RESULT_FILE"
+    echo '{"reactVersions":[],"components":{}}' > "$RESULT_FILE"
   fi
 
   # Clean up clone immediately to save disk space
@@ -66,7 +67,8 @@ echo ""
 echo "Summary:"
 jq '{
   total_repos: (keys | length),
-  repos_with_usage: [to_entries[] | select(.value | length > 0)] | length
+  repos_with_usage: [to_entries[] | select(.value.components | length > 0)] | length,
+  repos_with_react_version: [to_entries[] | select(.value.reactVersions | length > 0)] | length
 }' adoption-report.json
 
 

@@ -2,6 +2,7 @@
 // Requires: npm install -g react-scanner
 // Usage: node scan-repo.mjs <path-to-repo>
 import scanner from "react-scanner";
+import { readdir, readFile } from "fs/promises";
 import path from "path";
 
 const repoPath = process.argv[2];
@@ -9,6 +10,60 @@ if (!repoPath) {
   console.error("Usage: node scan-repo.mjs <path-to-repo>");
   process.exit(1);
 }
+
+const ignoredDirectories = new Set([
+  "node_modules",
+  ".git",
+  "dist",
+  "build",
+  "coverage",
+]);
+const dependencySections = [
+  "dependencies",
+  "devDependencies",
+  "peerDependencies",
+  "optionalDependencies",
+];
+
+async function findReactVersions(directory, relativeDirectory = ".") {
+  const entries = await readdir(directory, { withFileTypes: true });
+  const versions = [];
+
+  for (const entry of entries) {
+    if (entry.isDirectory() && !ignoredDirectories.has(entry.name)) {
+      versions.push(
+        ...(await findReactVersions(
+          path.join(directory, entry.name),
+          path.join(relativeDirectory, entry.name),
+        )),
+      );
+    }
+
+    if (entry.isFile() && entry.name === "package.json") {
+      try {
+        const packageJson = JSON.parse(
+          await readFile(path.join(directory, entry.name), "utf8"),
+        );
+        for (const section of dependencySections) {
+          const version = packageJson[section]?.react;
+          if (version) {
+            versions.push({
+              packagePath: path.join(relativeDirectory, entry.name),
+              section,
+              version,
+            });
+          }
+        }
+      } catch {
+        // Ignore malformed package manifests so component scanning can continue.
+      }
+    }
+  }
+
+  return versions;
+}
+
+const reactVersions = await findReactVersions(repoPath);
 
 // react-scanner unconditionally console.log()s a timing line to stdout:
 // "Scanned X files in Y seconds"
@@ -38,4 +93,9 @@ try {
   result = {};
 }
 
-process.stdout.write(JSON.stringify(result ?? {}));
+process.stdout.write(
+  JSON.stringify({
+    reactVersions,
+    components: result ?? {},
+  }),
+);

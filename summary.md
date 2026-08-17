@@ -1,3 +1,6 @@
+
+## Component usage
+
 | Component | Total Instances | Repos Using It |
 | --- | --- | --- |
 | Button | 308 | 20 |
@@ -42,7 +45,7 @@
 | ProgressCircle | 1 | 1 |
 | FooterLinks | 1 | 1 |
 
-## React Versions
+## React versions for repos using the component library
 
 | Repository | Package | Section | React Version |
 | --- | --- | --- | --- |

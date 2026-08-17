@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+echo ""
+echo "## Component usage"
+echo ""
 jq -r '
   # Flatten to [{repo, component, count}]
   [ to_entries[] | .key as $repo | (.value.components // .value) | to_entries[] |
@@ -15,7 +18,7 @@ jq -r '
        { printf "| %s | %s | %s |\n", $1, $2, $3 }'
 
 echo ""
-echo "## React Versions"
+echo "## React versions for repos using the component library"
 echo ""
 jq -r '
   [ to_entries[] | .key as $repo | .value.reactVersions[]? |

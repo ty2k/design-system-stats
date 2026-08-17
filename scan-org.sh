@@ -35,7 +35,7 @@ while IFS= read -r REPO || [[ -n "$REPO" ]]; do
   fi
 
   echo "  Scanning..."
-  if node "$SCRIPT_DIR/scan-repo.mjs" "$CLONE_PATH" > "$RESULT_FILE" 2>/dev/null; then
+  if node "$SCRIPT_DIR/scan-repo.mjs" "$CLONE_PATH" > "$RESULT_FILE"; then
     COMPONENT_COUNT=$(jq '.components | keys | length' "$RESULT_FILE")
     REACT_VERSION_COUNT=$(jq '.reactVersions | length' "$RESULT_FILE")
     echo "  ✔ Found $COMPONENT_COUNT component(s), $REACT_VERSION_COUNT React declaration(s)"

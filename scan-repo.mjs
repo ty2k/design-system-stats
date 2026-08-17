@@ -25,7 +25,17 @@ const dependencySections = [
 ];
 
 async function findReactVersions(directory, relativeDirectory = ".") {
-  const entries = await readdir(directory, { withFileTypes: true });
+  let entries;
+
+  try {
+    entries = await readdir(directory, { withFileTypes: true });
+  } catch {
+    console.warn(
+      `No React versions for directory ${directory} and relativeDirectory ${relativeDirectory}`,
+    );
+    return [];
+  }
+
   const versions = [];
 
   for (const entry of entries) {

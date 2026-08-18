@@ -23,8 +23,9 @@ const dependencySections = [
   "peerDependencies",
   "optionalDependencies",
 ];
+const designSystemPackage = "@bcgov/design-system-react-components";
 
-async function findReactVersions(directory, relativeDirectory = ".") {
+async function findDependencyVersions(directory, relativeDirectory = ".") {
   let entries;
 
   try {
@@ -33,18 +34,20 @@ async function findReactVersions(directory, relativeDirectory = ".") {
     console.warn(
       `No React versions for directory ${directory} and relativeDirectory ${relativeDirectory}`,
     );
-    return [];
+    return { reactVersions: [], designSystemVersions: [] };
   }
 
-  const versions = [];
+  const reactVersions = [];
+  const designSystemVersions = [];
 
   for (const entry of entries) {
     if (entry.isDirectory() && !ignoredDirectories.has(entry.name)) {
-      const childVersions = await findReactVersions(
+      const child = await findDependencyVersions(
         path.join(directory, entry.name),
         path.join(relativeDirectory, entry.name),
       );
-      for (const v of childVersions) versions.push(v);
+      for (const v of child.reactVersions) reactVersions.push(v);
+      for (const v of child.designSystemVersions) designSystemVersions.push(v);
     }
 
     if (entry.isFile() && entry.name === "package.json") {
@@ -52,13 +55,20 @@ async function findReactVersions(directory, relativeDirectory = ".") {
         const packageJson = JSON.parse(
           await readFile(path.join(directory, entry.name), "utf8"),
         );
+        const packagePath = path.join(relativeDirectory, entry.name);
         for (const section of dependencySections) {
-          const version = packageJson[section]?.react;
-          if (version) {
-            versions.push({
-              packagePath: path.join(relativeDirectory, entry.name),
+          const reactVersion = packageJson[section]?.react;
+          if (reactVersion) {
+            reactVersions.push({ packagePath, section, version: reactVersion });
+          }
+
+          const designSystemVersion =
+            packageJson[section]?.[designSystemPackage];
+          if (designSystemVersion) {
+            designSystemVersions.push({
+              packagePath,
               section,
-              version,
+              version: designSystemVersion,
             });
           }
         }
@@ -68,10 +78,11 @@ async function findReactVersions(directory, relativeDirectory = ".") {
     }
   }
 
-  return versions;
+  return { reactVersions, designSystemVersions };
 }
 
-const reactVersions = await findReactVersions(repoPath);
+const { reactVersions, designSystemVersions } =
+  await findDependencyVersions(repoPath);
 
 // react-scanner unconditionally console.log()s a timing line to stdout:
 // "Scanned X files in Y seconds"
@@ -93,7 +104,7 @@ try {
     exclude: ["node_modules", ".git", "dist", "build", "coverage"],
     globs: ["**/*.{js,jsx,ts,tsx}"],
     includeSubComponents: true,
-    importedFrom: "@bcgov/design-system-react-components",
+    importedFrom: designSystemPackage,
     processors: [({ report }) => report],
   });
 } catch (e) {
@@ -104,6 +115,7 @@ try {
 process.stdout.write(
   JSON.stringify({
     reactVersions,
+    designSystemVersions,
     components: result ?? {},
   }),
 );

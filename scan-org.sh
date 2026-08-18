@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Requires: gh CLI (authenticated), jq, node, react-scanner (npm install -g react-scanner)
-# Usage: bash scan-org.sh adopting-repos.txt
+# Usage: bash scan-org.sh react-repos.txt
 # Output: adoption-report.json
 
 set -euo pipefail
@@ -30,7 +30,7 @@ while IFS= read -r REPO || [[ -n "$REPO" ]]; do
   echo "▶ Cloning $REPO..."
   if ! gh repo clone "$REPO" "$CLONE_PATH" -- --depth=1 --quiet 2>/dev/null; then
     echo "  ⚠ Skipping $REPO (clone failed)"
-    echo '{"reactVersions":[],"components":{}}' > "$RESULT_FILE"
+    echo '{"reactVersions":[],"designSystemVersions":[],"components":{}}' > "$RESULT_FILE"
     continue
   fi
 
@@ -41,7 +41,7 @@ while IFS= read -r REPO || [[ -n "$REPO" ]]; do
     echo "  ✔ Found $COMPONENT_COUNT component(s), $REACT_VERSION_COUNT React declaration(s)"
   else
     echo "  ⚠ Scan failed for $REPO"
-    echo '{"reactVersions":[],"components":{}}' > "$RESULT_FILE"
+    echo '{"reactVersions":[],"designSystemVersions":[],"components":{}}' > "$RESULT_FILE"
   fi
 
   # Clean up clone immediately to save disk space
@@ -68,6 +68,7 @@ echo "Summary:"
 jq '{
   total_repos: (keys | length),
   repos_with_usage: [to_entries[] | select(.value.components | length > 0)] | length,
+  repos_with_library_dependency: [to_entries[] | select((.value.designSystemVersions // []) | length > 0)] | length,
   repos_with_react_version: [to_entries[] | select(.value.reactVersions | length > 0)] | length
 }' adoption-report.json
 

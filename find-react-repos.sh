@@ -18,7 +18,7 @@ search() {
     --filename package.json \
     --json repository \
     --jq '.[].repository.nameWithOwner' \
-    --limit 100
+    --limit 1000
 }
 
 {

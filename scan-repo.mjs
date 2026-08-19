@@ -32,7 +32,7 @@ async function findDependencyVersions(directory, relativeDirectory = ".") {
     entries = await readdir(directory, { withFileTypes: true });
   } catch {
     console.warn(
-      `No React versions for directory ${directory} and relativeDirectory ${relativeDirectory}`,
+      `No version info for directory ${directory} and relativeDirectory ${relativeDirectory}`,
     );
     return { reactVersions: [], designSystemVersions: [] };
   }

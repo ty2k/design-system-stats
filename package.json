@@ -4,8 +4,8 @@
   "description": "Collect design system statistics from a GitHub organization",
   "main": "index.js",
   "scripts": {
-    "find-adopters": "bash find-adopters.sh > adopting-repos.txt",
-    "scan-org": "bash scan-org.sh adopting-repos.txt",
+    "find-react-repos": "bash find-react-repos.sh > react-repos.txt",
+    "scan-org": "bash scan-org.sh react-repos.txt",
     "summarize": "bash generate-summary-table.sh > summary.md"
   },
   "repository": {

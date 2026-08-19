@@ -14,8 +14,10 @@ Note that this will use your `gh` credentials to pull each repo using the librar
 
 ## Run
 
-1. `npm run find-adopters` to generate `adopting-repos.txt`
+1. `npm run find-react-repos` to generate `react-repos.txt`, which lists every repo in the org whose `package.json` declares `react` and/or the component library
 2. `npm run scan-org` to clone each repo in the org, scan it, and generate `adoption-report.json`
 3. `npm run summarize` to generate Markdown tables showing component usage and each project's declared React version in `summary.md`
 
-The scan records every `react` declaration in `dependencies`, `devDependencies`, `peerDependencies`, and `optionalDependencies`, including manifests in monorepos.
+The scan records every `react` and `@bcgov/design-system-react-components` declaration in `dependencies`, `devDependencies`, `peerDependencies`, and `optionalDependencies`, including manifests in monorepos.
+
+`summary.md` contains three tables: component usage, React versions for repos using the component library, and React versions for all React repos with a ✅/❌ column indicating whether the component library is used.

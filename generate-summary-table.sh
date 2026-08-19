@@ -3,7 +3,6 @@
 # A repo counts as an adopter if it imports components or declares the library as a dependency.
 USES_LIBRARY='def uses_library: ((.components // {}) | length > 0) or (((.designSystemVersions // []) | length) > 0);'
 
-echo ""
 echo "## Component usage"
 echo ""
 jq -r '

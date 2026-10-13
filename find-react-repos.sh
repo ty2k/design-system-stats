@@ -6,7 +6,7 @@ ORG="bcgov"
 PACKAGE="@bcgov/design-system-react-components"
 
 if ! gh auth status >/dev/null 2>&1; then
-  echo "Error: GitHub CLI is not authenticated. Run 'gh auth login' and try again."
+  echo "Error: GitHub CLI is not authenticated. Run 'gh auth login' and try again." >&2
   exit 1
 fi
 

@@ -2,48 +2,56 @@
 
 | Component | Total Instances | Repos Using It |
 | --- | --- | --- |
-| Button | 328 | 21 |
-| TextField | 73 | 17 |
-| Header | 51 | 40 |
-| Footer | 40 | 34 |
-| InlineAlert | 35 | 8 |
-| Text | 28 | 5 |
-| Radio | 27 | 10 |
-| Checkbox | 24 | 9 |
-| Callout | 24 | 2 |
-| ButtonGroup | 23 | 6 |
-| Select | 20 | 9 |
-| Modal | 20 | 8 |
-| RadioGroup | 17 | 10 |
-| Heading | 16 | 6 |
-| TooltipTrigger | 15 | 3 |
-| Tooltip | 15 | 3 |
-| Dialog | 15 | 8 |
-| Form | 14 | 8 |
-| SvgInfoIcon | 13 | 1 |
-| Switch | 12 | 5 |
-| Link | 11 | 5 |
-| CheckboxGroup | 11 | 6 |
-| ToggleButton | 10 | 3 |
-| TextArea | 10 | 6 |
-| Accordion | 10 | 4 |
-| ProgressBar | 8 | 3 |
+| Text | 2073 | 6 |
+| Heading | 1503 | 7 |
+| Button | 1475 | 25 |
+| Link | 1115 | 9 |
+| TextField | 429 | 22 |
+| ButtonGroup | 256 | 8 |
+| InlineAlert | 204 | 13 |
+| Checkbox | 172 | 13 |
+| TextArea | 143 | 8 |
+| Select | 130 | 14 |
+| Form | 124 | 9 |
+| NumberField | 116 | 2 |
+| Modal | 114 | 10 |
+| AlertDialog | 79 | 6 |
+| Radio | 76 | 13 |
+| Header | 63 | 52 |
+| ProgressCircle | 61 | 4 |
+| DatePicker | 56 | 4 |
+| Footer | 51 | 45 |
+| RadioGroup | 42 | 13 |
+| Dialog | 35 | 10 |
+| Callout | 27 | 4 |
+| CheckboxGroup | 20 | 8 |
+| Tooltip | 18 | 4 |
+| Switch | 16 | 6 |
+| SvgInfoIcon | 16 | 2 |
+| Accordion | 15 | 5 |
+| ToggleButton | 14 | 3 |
+| ProgressBar | 9 | 4 |
+| AccordionGroup | 8 | 4 |
+| ToggleButtonGroup | 7 | 3 |
+| TagList | 6 | 5 |
+| TagGroup | 6 | 5 |
 | Separator | 6 | 2 |
-| NumberField | 6 | 2 |
-| AccordionGroup | 6 | 3 |
-| AlertDialog | 5 | 4 |
-| ToggleButtonGroup | 4 | 3 |
-| TagList | 4 | 4 |
-| TagGroup | 4 | 4 |
-| DatePicker | 3 | 2 |
-| SvgExclamationIcon | 2 | 1 |
+| TooltipTrigger | 5 | 4 |
+| SvgExclamationIcon | 5 | 3 |
+| SvgUpRightFromSquareIcon | 3 | 1 |
+| SvgExclamationCircleIcon | 3 | 1 |
+| SvgChevronUpIcon | 3 | 2 |
+| SvgChevronDownIcon | 3 | 2 |
+| SvgCheckCircleIcon | 3 | 2 |
+| FooterLinks | 3 | 2 |
+| AlertBanner | 3 | 3 |
 | DialogTrigger | 2 | 1 |
-| AlertBanner | 2 | 2 |
-| SvgUpRightFromSquareIcon | 1 | 1 |
+| SvgChevronRightIcon | 1 | 1 |
+| SvgChevronLeftIcon | 1 | 1 |
+| SvgCheckIcon | 1 | 1 |
+| SvgBcOutlineIcon | 1 | 1 |
 | SvgBcLogo | 1 | 1 |
 | Subheader | 1 | 1 |
-| ProgressCircle | 1 | 1 |
-| FooterLinks | 1 | 1 |
 
 ## React versions for repos using the component library
 
@@ -51,13 +59,15 @@
 | --- | --- | --- | --- |
 | citz-grs-dats | desktop/package.json | devDependencies | 18.3.1 |
 | citz-imb-common-code | frontend/package.json | dependencies | 18.3.1 |
+| digital-marketplace-next | app/frontend/package.json | dependencies | 18.3.1 |
+| digital-marketplace-next | design/package.json | dependencies | 18.3.1 |
 | citz-dss-dbumt | frontend/package.json | dependencies | 19.0.0 |
 | Capstone-2026 | frontend/package.json | dependencies | 19.1.1 |
 | ai-adoption-document-intelligence | apps/frontend/package.json | dependencies | 19.2.1 |
 | soba | frontend/package.json | dependencies | 19.2.3 |
 | standard-graphemes | validator/frontend/package.json | dependencies | 19.2.6 |
 | adr | Apps/Registries/PublicBodies/Source/front-end/package.json | dependencies | 19.2.7 |
-| myss | Apps/MyssWebclient/package.json | dependencies | 19.2.8 |
+| myss | Apps/MyssWebclient/package.json | dependencies | 19.3.0 |
 | myss | Apps/MyssContent/package.json | dependencies | ^18.0.0 |
 | cst-feedback-pkg | package.json | peerDependencies | ^18.0.0 |
 | burn-severity-map | frontend/package.json | dependencies | ^18.2.0 |
@@ -67,7 +77,6 @@
 | citz-imb-playground | packages/frontend/package.json | dependencies | ^18.3.1 |
 | coast-cbb-ledger | package.json | dependencies | ^18.3.1 |
 | iis-portal-prototype-v1 | package.json | dependencies | ^18.3.1 |
-| karim-demo-oct-2024 | frontend/package.json | dependencies | ^18.3.1 |
 | nr-ems-wr | frontend/package.json | dependencies | ^18.3.1 |
 | nr-epd-organics-info | frontend/package.json | dependencies | ^18.3.1 |
 | qs1 | frontend/package.json | dependencies | ^18.3.1 |
@@ -80,13 +89,22 @@
 | error-lookup-tool | package.json | dependencies | ^19.0.0 |
 | gis-pantry | scripts/stac-react-demo/package.json | dependencies | ^19.0.0 |
 | nr-acrfd-comments | .backup/frontend/package.json | dependencies | ^19.0.0 |
+| nr-fop | frontend/package.json | dependencies | ^19.0.0 |
 | nr-ipm-platform | frontend/package.json | dependencies | ^19.0.0 |
+| nr-isp | frontend/package.json | dependencies | ^19.0.0 |
+| nr-newrepo | frontend/package.json | dependencies | ^19.0.0 |
 | nr-nodejs-provision-secret-openshift | frontend/package.json | dependencies | ^19.0.0 |
+| nr-nodejs-sample-openshift | frontend/package.json | dependencies | ^19.0.0 |
+| nr-nodejs-vault-agent-openshift | frontend/package.json | dependencies | ^19.0.0 |
 | nr-rec-signage | frontend/package.json | dependencies | ^19.0.0 |
+| nr-scs | frontend/package.json | dependencies | ^19.0.0 |
+| nr-tenures-api | frontend/package.json | dependencies | ^19.0.0 |
+| nr-timber-mark-api | frontend/package.json | dependencies | ^19.0.0 |
+| oscar-qs-knox | frontend/package.json | dependencies | ^19.0.0 |
 | pubcode | frontend/package.json | dependencies | ^19.0.0 |
+| qdemo | frontend/package.json | dependencies | ^19.0.0 |
 | quickstart-openshift | frontend/package.json | dependencies | ^19.0.0 |
 | sdx-reference-impl | frontend/package.json | dependencies | ^19.0.0 |
-| tryquickstart | frontend/package.json | dependencies | ^19.0.0 |
 | abi-landing-page | package.json | dependencies | ^19.1.0 |
 | cheque-verification | frontend/package.json | dependencies | ^19.1.0 |
 | nr-enmods-wr | frontend/package.json | dependencies | ^19.1.0 |
@@ -99,9 +117,12 @@
 | csa | frontend/package.json | dependencies | ^19.2.0 |
 | ai-hub-tracking | tenant-onboarding-portal/frontend/package.json | dependencies | ^19.2.4 |
 | bcgw-replication-monitor | apps/web/package.json | dependencies | ^19.2.6 |
+| queue-management | appointment-booking/package.json | dependencies | ^19.2.6 |
 | Capstone-2026 | package.json | dependencies | ^19.2.7 |
 | Capstone-2026 | package.json | devDependencies | ^19.2.7 |
 | quickstart-azure-containers | frontend/package.json | dependencies | ^19.2.7 |
+| automated-statusing-tool | frontend/package.json | dependencies | ^19.2.8 |
+| digital-trust-common-service | apps/ui/package.json | dependencies | ^19.2.8 |
 | nr-nmp | frontend/package.json | dependencies | ^19.2.8 |
 
 ## React versions for all `bcgov` repos
@@ -112,7 +133,6 @@
 | restoration-tracker | app/package.json | dependencies | ~16.14.0 | ❌ |
 | tfrs | frontend/package.json | dependencies | ~16.14.0 | ❌ |
 | nert-restoration-tracker | app/package.json | dependencies | ~18.3.1 | ❌ |
-| bc-wallet-mobile | app/package.json | dependencies | ~19.1.4 | ❌ |
 | bc-wallet-mobile | packages/bcsc-core/package.json | devDependencies | ~19.1.4 | ❌ |
 | cas-template-app | packages/sso-react/package.json | peerDependencies | 16 - 17 | ❌ |
 | mdms-device-signout-app | package.json | dependencies | 16.5.0 | ❌ |
@@ -133,6 +153,7 @@
 | parks-adventure-mobile | package.json | dependencies | 16.13.1 | ❌ |
 | sso-startup-sample-project | client/package.json | dependencies | 16.13.1 | ❌ |
 | startup-sample-project-aws-serverless-TFC | client/package.json | dependencies | 16.13.1 | ❌ |
+| nr-brmb-agristability-pcfcontrols | Account.pcf/package.json | dependencies | 16.14.0 | ❌ |
 | LSB-SPFx-AdvancedSearch | package.json | dependencies | 17.0.1 | ❌ |
 | ag-pssg-sdlc | frontend-old/package.json | dependencies | 17.0.2 | ❌ |
 | ag-pssg-sdlc | frontend/package.json | dependencies | 17.0.2 | ❌ |
@@ -157,14 +178,16 @@
 | elmsd-nextjs-headless | strapi-cms-next/package.json | dependencies | 18.2.0 | ❌ |
 | PSP | source/frontend/package.json | dependencies | 18.2.0 | ❌ |
 | workbc-ches-email-blast | packages/forms-frontend/package.json | dependencies | 18.2.0 | ❌ |
-| workforce-profile-tool | frontend/package.json | dependencies | 18.2.0 | ❌ |
 | nr-bcmi | cms/package.json | dependencies | 18.3.0 | ❌ |
 | citz-grs-dats | desktop/package.json | devDependencies | 18.3.1 | ✅ |
 | citz-imb-common-code | frontend/package.json | dependencies | 18.3.1 | ✅ |
+| digital-marketplace-next | app/frontend/package.json | dependencies | 18.3.1 | ✅ |
+| digital-marketplace-next | design/package.json | dependencies | 18.3.1 | ✅ |
 | citz-imb-sso-react | package.json | dependencies | 18.3.1 | ❌ |
 | digital_marketplace | package.json | dependencies | 18.3.1 | ❌ |
 | gcpe-MediaHub | gcpe-MediaHub/gcpe-mediahub.client/package.json | dependencies | 18.3.1 | ❌ |
 | moh-bcer | packages/bcer-data-portal/app/package.json | dependencies | 18.3.1 | ❌ |
+| nr-compliance-enforcement | frontend/package.json | dependencies | 18.3.1 | ❌ |
 | PIMS | react-app/package.json | dependencies | 18.3.1 | ❌ |
 | tno | app/editor/package.json | dependencies | 18.3.1 | ❌ |
 | tno | app/subscriber/package.json | dependencies | 18.3.1 | ❌ |
@@ -178,6 +201,7 @@
 | MOH_TeamBasedCare | apps/web/package.json | dependencies | 19.1.2 | ❌ |
 | ai-adoption-document-intelligence | apps/frontend/package.json | dependencies | 19.2.1 | ✅ |
 | soba | frontend/package.json | dependencies | 19.2.3 | ✅ |
+| bc-wallet-mobile | app/package.json | dependencies | 19.2.3 | ❌ |
 | citz-sbc-queue | package.json | dependencies | 19.2.3 | ❌ |
 | eaaf-automation | package.json | dependencies | 19.2.4 | ❌ |
 | nr-brmb-agristability-powerapps | enrollment app/package.json | dependencies | 19.2.4 | ❌ |
@@ -185,16 +209,17 @@
 | keycloak-example-apps | examples/oidc/css-api/nextjs/package.json | dependencies | 19.2.5 | ❌ |
 | keycloak-example-apps | examples/oidc/service-account/nextjs/next-app/package.json | dependencies | 19.2.5 | ❌ |
 | keycloak-example-apps | playground/public-spa/package.json | dependencies | 19.2.5 | ❌ |
-| zeva2 | next/package.json | dependencies | 19.2.5 | ❌ |
 | standard-graphemes | validator/frontend/package.json | dependencies | 19.2.6 | ✅ |
 | adr | Apps/Registries/PublicBodies/Source/front-end/package.json | dependencies | 19.2.7 | ✅ |
 | csbc-single-digital-gateway | apps/citizen-portal-web/package.json | dependencies | 19.2.7 | ❌ |
 | csbc-single-digital-gateway | apps/platform-web/package.json | dependencies | 19.2.7 | ❌ |
 | csbc-single-digital-gateway | packages/react/package.json | devDependencies | 19.2.7 | ❌ |
 | csbc-single-digital-gateway | packages/ui/package.json | devDependencies | 19.2.7 | ❌ |
-| myss | Apps/MyssWebclient/package.json | dependencies | 19.2.8 | ✅ |
-| CONN-CCBC-portal | app/package.json | dependencies | 19.2.8 | ❌ |
-| nr-pies | package.json | dependencies | 19.2.8 | ❌ |
+| myss | Apps/MyssWebclient/package.json | dependencies | 19.3.0 | ✅ |
+| CONN-CCBC-portal | app/package.json | dependencies | 19.3.0 | ❌ |
+| nr-compliance-enforcement | backend/package.json | dependencies | 19.3.0 | ❌ |
+| nr-pies | package.json | dependencies | 19.3.0 | ❌ |
+| zeva2 | next/package.json | dependencies | 19.3.0 | ❌ |
 | bcew-monorepo | package.json | peerDependencies | catalog: | ❌ |
 | moh-am-themes | account-theme/extension/moh-keycloak-theme/src/main/resources/theme/moh-app-realm-account/account/src/package.json | dependencies | npm:@pika/react@^16.13.1 | ❌ |
 | moh-iam | keycloak-themes/keycloak-22-themes/keycloak-22-theme/extension/moh-keycloak-theme/src/main/resources/theme/moh-app-realm-account/account/src/package.json | dependencies | npm:@pika/react@^16.13.1 | ❌ |
@@ -205,6 +230,7 @@
 | digital-gov | app-web/package.json | dependencies | ^16.6.3 | ❌ |
 | ECC-OFM-D365 | OFM.Infrastructure.PCF/Controls/FundingEnvelope/package.json | devDependencies | ^16.8 | ❌ |
 | ECC-OFM-D365 | OFM.Infrastructure.PCF/Controls/GoodStanding/package.json | devDependencies | ^16.8 | ❌ |
+| OCWA | frontend/package.json | dependencies | ^16.8.0 | ❌ |
 | elmsd-nodejs | packages/eslint-config/package.json | peerDependencies | ^16.8.0 || ^17.0.0 || ^18.0.0 | ❌ |
 | elmsd-eslint-config | package.json | peerDependencies | ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 | ❌ |
 | sae-virtual-display | hub/ui/package.json | dependencies | ^16.10.0 | ❌ |
@@ -225,6 +251,7 @@
 | cas-template-app | packages/sso-react/package.json | devDependencies | ^16.14.0 | ❌ |
 | crt | client/package.json | dependencies | ^16.14.0 | ❌ |
 | ECC-OFM-D365 | OFM.Infrastructure.PCF/Controls/PAGridCustomizer/package.json | dependencies | ^16.14.0 | ❌ |
+| nr-brmb-agristability-pcfcontrols | Account.pcf/package.json | devDependencies | ^16.14.0 | ❌ |
 | react-shared-components | package.json | devDependencies | ^16.14.0 | ❌ |
 | tg | package.json | dependencies | ^16.14.0 | ❌ |
 | design-system | packages/react-components/package.json | peerDependencies | ^16.14.0 || ^17.0.0-rc.1 || ^18.0.0 || ^19.0.0 | ❌ |
@@ -232,14 +259,12 @@
 | api-services-portal | src/package.json | dependencies | ^17.0.1 | ❌ |
 | BCP-CMS | src/admin/package.json | dependencies | ^17.0.1 | ❌ |
 | BCP-CMS | src/staging/package.json | dependencies | ^17.0.1 | ❌ |
-| bcparks-staff-portal | frontend-legacy/package.json | dependencies | ^17.0.1 | ❌ |
 | biohubbc-common-codes | app/biohubbc-codes/package.json | dependencies | ^17.0.1 | ❌ |
 | citz-imb-sp-vdr | package.json | dependencies | ^17.0.1 | ❌ |
 | workbc-mobile-app-website | package.json | dependencies | ^17.0.1 | ❌ |
 | cas-ggircs | ggircs-app/app/package.json | dependencies | ^17.0.2 | ❌ |
 | digital-journeys | forms-flow-web/package.json | dependencies | ^17.0.2 | ❌ |
 | foi-flow | forms-flow-web/package.json | dependencies | ^17.0.2 | ❌ |
-| hets | client/package.json | dependencies | ^17.0.2 | ❌ |
 | itvr | frontend/package.json | dependencies | ^17.0.2 | ❌ |
 | jag-ai-reviewer | src/frontend/ai-reviewer-admin/package.json | dependencies | ^17.0.2 | ❌ |
 | jag-file-submission | src/frontend/efiling-demo/package.json | dependencies | ^17.0.2 | ❌ |
@@ -257,7 +282,6 @@
 | developer-portal | plugins/techdoc-expandable-toc/package.json | peerDependencies | ^18.0.0 | ❌ |
 | developer-portal | plugins/toc-fix2/package.json | peerDependencies | ^18.0.0 | ❌ |
 | digital-trust-toolkit | package.json | dependencies | ^18.0.0 | ❌ |
-| mem-mmti-public | cms/package.json | dependencies | ^18.0.0 | ❌ |
 | whis-ui | package.json | dependencies | ^18.0.0 | ❌ |
 | cst-feedback-pkg | package.json | peerDependencies | ^18.0.0 || ^19.0.0 | ✅ |
 | csit-backstage-microcks-plugin | packages/app/package.json | dependencies | ^18.0.2 | ❌ |
@@ -289,6 +313,8 @@
 | EPIC.compliance | compliance-web/package.json | dependencies | ^18.2.0 | ❌ |
 | EPIC.conditions | condition-web/package.json | dependencies | ^18.2.0 | ❌ |
 | EPIC.docgen | scaffold-web/package.json | dependencies | ^18.2.0 | ❌ |
+| EPIC.map | map-web/package.json | dependencies | ^18.2.0 | ❌ |
+| EPIC.map | packages/epic-map/package.json | dependencies | ^18.2.0 | ❌ |
 | EPIC.scaffold | scaffold-web/package.json | dependencies | ^18.2.0 | ❌ |
 | EPIC.submit | submit-web/package.json | dependencies | ^18.2.0 | ❌ |
 | foi-docreviewer | web/package.json | dependencies | ^18.2.0 | ❌ |
@@ -303,14 +329,12 @@
 | nf-af-efp-digitalwb | powerpod/package.json | devDependencies | ^18.2.0 | ❌ |
 | nr-af-pods | powerpod/package.json | devDependencies | ^18.2.0 | ❌ |
 | nr-af-pods | testing/test-automation-tools/pods-chrome-extension/package.json | dependencies | ^18.2.0 | ❌ |
-| nr-compliance-enforcement | frontend/package.json | dependencies | ^18.2.0 | ❌ |
 | nr-enmods-dar | frontend/package.json | dependencies | ^18.2.0 | ❌ |
 | nr-epd-digital-services | cats-frontend/package.json | dependencies | ^18.2.0 | ❌ |
 | nr-epd-digital-services | frontend/package.json | dependencies | ^18.2.0 | ❌ |
 | nr-epd-digital-services | map-package/package.json | dependencies | ^18.2.0 | ❌ |
 | nr-mals | frontend/package.json | dependencies | ^18.2.0 | ❌ |
 | nr-site-registry | frontend/package.json | dependencies | ^18.2.0 | ❌ |
-| nr-spar | frontend/package.json | dependencies | ^18.2.0 | ❌ |
 | onroutebc-policy-engine | src/_examples/usage/react-frontend-example/package.json | dependencies | ^18.2.0 | ❌ |
 | pipeline-templates | tekton/demo/simple-react/package.json | dependencies | ^18.2.0 | ❌ |
 | psa-job-store | apps/app/package.json | dependencies | ^18.2.0 | ❌ |
@@ -329,7 +353,6 @@
 | citz-imb-playground | packages/frontend/package.json | dependencies | ^18.3.1 | ✅ |
 | coast-cbb-ledger | package.json | dependencies | ^18.3.1 | ✅ |
 | iis-portal-prototype-v1 | package.json | dependencies | ^18.3.1 | ✅ |
-| karim-demo-oct-2024 | frontend/package.json | dependencies | ^18.3.1 | ✅ |
 | nr-ems-wr | frontend/package.json | dependencies | ^18.3.1 | ✅ |
 | nr-epd-organics-info | frontend/package.json | dependencies | ^18.3.1 | ✅ |
 | qs1 | frontend/package.json | dependencies | ^18.3.1 | ✅ |
@@ -337,7 +360,6 @@
 | small-claims-assistant-prototype | web/package.json | dependencies | ^18.3.1 | ✅ |
 | template-repository | app/client/package.json | dependencies | ^18.3.1 | ✅ |
 | ABI-Dev-Ops-All-Projects | client/package.json | dependencies | ^18.3.1 | ❌ |
-| bcparks-staff-portal | frontend/package.json | dependencies | ^18.3.1 | ❌ |
 | bcparks.ca | src/cms/package.json | dependencies | ^18.3.1 | ❌ |
 | bcparks.ca | src/gatsby/package.json | dependencies | ^18.3.1 | ❌ |
 | easier-tool | client/package.json | dependencies | ^18.3.1 | ❌ |
@@ -346,12 +368,14 @@
 | EPIC.track | epictrack-web/package.json | dependencies | ^18.3.1 | ❌ |
 | gss-dev-startup | demo-frontend/package.json | dependencies | ^18.3.1 | ❌ |
 | hcap | client/package.json | dependencies | ^18.3.1 | ❌ |
+| hets | client/package.json | dependencies | ^18.3.1 | ❌ |
 | HMCR | client/package.json | dependencies | ^18.3.1 | ❌ |
 | hsb-dashboard | src/dashboard/package.json | dependencies | ^18.3.1 | ❌ |
 | kiln | package.json | dependencies | ^18.3.1 | ❌ |
 | lcfs | frontend/package.json | dependencies | ^18.3.1 | ❌ |
 | lcrb-ai | accelerator/code/frontend/package.json | dependencies | ^18.3.1 | ❌ |
 | long-service-awards-reg | package.json | dependencies | ^18.3.1 | ❌ |
+| met-formio | package.json | devDependencies | ^18.3.1 | ❌ |
 | moh-bcer | packages/bcer-retailer-app/app/package.json | dependencies | ^18.3.1 | ❌ |
 | moh-bcer | packages/bcer-shared-components/package.json | devDependencies | ^18.3.1 | ❌ |
 | onroutebc | frontend/package.json | dependencies | ^18.3.1 | ❌ |
@@ -367,6 +391,7 @@
 | workbc-chefs-cfms | packages/admin-client/package.json | dependencies | ^18.3.1 | ❌ |
 | workbc-chefs-cfms | packages/external-client/package.json | dependencies | ^18.3.1 | ❌ |
 | workbc-chefs-cfms | packages/static/package.json | dependencies | ^18.3.1 | ❌ |
+| bcparks-staff-portal | frontend/package.json | dependencies | ^19 | ❌ |
 | csbc-single-digital-gateway | packages/emails/package.json | peerDependencies | ^19 | ❌ |
 | csbc-single-digital-gateway | packages/react/package.json | peerDependencies | ^19 | ❌ |
 | csbc-single-digital-gateway | packages/ui/package.json | peerDependencies | ^19 | ❌ |
@@ -376,13 +401,22 @@
 | error-lookup-tool | package.json | dependencies | ^19.0.0 | ✅ |
 | gis-pantry | scripts/stac-react-demo/package.json | dependencies | ^19.0.0 | ✅ |
 | nr-acrfd-comments | .backup/frontend/package.json | dependencies | ^19.0.0 | ✅ |
+| nr-fop | frontend/package.json | dependencies | ^19.0.0 | ✅ |
 | nr-ipm-platform | frontend/package.json | dependencies | ^19.0.0 | ✅ |
+| nr-isp | frontend/package.json | dependencies | ^19.0.0 | ✅ |
+| nr-newrepo | frontend/package.json | dependencies | ^19.0.0 | ✅ |
 | nr-nodejs-provision-secret-openshift | frontend/package.json | dependencies | ^19.0.0 | ✅ |
+| nr-nodejs-sample-openshift | frontend/package.json | dependencies | ^19.0.0 | ✅ |
+| nr-nodejs-vault-agent-openshift | frontend/package.json | dependencies | ^19.0.0 | ✅ |
 | nr-rec-signage | frontend/package.json | dependencies | ^19.0.0 | ✅ |
+| nr-scs | frontend/package.json | dependencies | ^19.0.0 | ✅ |
+| nr-tenures-api | frontend/package.json | dependencies | ^19.0.0 | ✅ |
+| nr-timber-mark-api | frontend/package.json | dependencies | ^19.0.0 | ✅ |
+| oscar-qs-knox | frontend/package.json | dependencies | ^19.0.0 | ✅ |
 | pubcode | frontend/package.json | dependencies | ^19.0.0 | ✅ |
+| qdemo | frontend/package.json | dependencies | ^19.0.0 | ✅ |
 | quickstart-openshift | frontend/package.json | dependencies | ^19.0.0 | ✅ |
 | sdx-reference-impl | frontend/package.json | dependencies | ^19.0.0 | ✅ |
-| tryquickstart | frontend/package.json | dependencies | ^19.0.0 | ✅ |
 | common-hosted-workflow | doc-site/package.json | dependencies | ^19.0.0 | ❌ |
 | ditp-showcase-creator-ui | package.json | dependencies | ^19.0.0 | ❌ |
 | fds-design | package.json | dependencies | ^19.0.0 | ❌ |
@@ -392,13 +426,14 @@
 | HOUS-Interactive-BCBC | packages/ui/package.json | devDependencies | ^19.0.0 | ❌ |
 | nr-ilcr | frontend/package.json | dependencies | ^19.0.0 | ❌ |
 | nr-silva | frontend/package.json | dependencies | ^19.0.0 | ❌ |
+| nr-spar | frontend/package.json | dependencies | ^19.0.0 | ❌ |
+| nr-taps | frontend/package.json | dependencies | ^19.0.0 | ❌ |
 | tenant-management-system | docs-site/package.json | dependencies | ^19.0.0 | ❌ |
 | abi-landing-page | package.json | dependencies | ^19.1.0 | ✅ |
 | cheque-verification | frontend/package.json | dependencies | ^19.1.0 | ✅ |
 | nr-enmods-wr | frontend/package.json | dependencies | ^19.1.0 | ✅ |
 | sdd-database | package.json | dependencies | ^19.1.0 | ✅ |
 | caregiver-portal | caregiver-portal/package.json | dependencies | ^19.1.0 | ❌ |
-| ExitSurveyAdmin | frontend/package.json | dependencies | ^19.1.0 | ❌ |
 | nr-csp | frontend/package.json | dependencies | ^19.1.0 | ❌ |
 | prp-map | package.json | peerDependencies | ^19.1.0 | ❌ |
 | quickstart-natual-resource-app | frontend/package.json | dependencies | ^19.1.0 | ❌ |
@@ -415,6 +450,7 @@
 | CMDB-Importer-and-CSV-Generator | app/package.json | dependencies | ^19.2.0 | ❌ |
 | csbc-nodejs-starter | packages/ui/package.json | devDependencies | ^19.2.0 | ❌ |
 | csbc-nodejs-starter | packages/ui/package.json | peerDependencies | ^19.2.0 | ❌ |
+| nr-brmb-agristability-powerapps | benefit app/package.json | dependencies | ^19.2.0 | ❌ |
 | nr-results-exam | frontend/package.json | dependencies | ^19.2.0 | ❌ |
 | psfs-sis | Web/psfs-sis-app/package.json | dependencies | ^19.2.0 | ❌ |
 | dep-public | web/package.json | dependencies | ^19.2.1 | ❌ |
@@ -429,6 +465,7 @@
 | ai-hub-tracking | tenant-onboarding-portal/frontend/package.json | dependencies | ^19.2.4 | ✅ |
 | csbc-single-digital-gateway | apps/notification-service/package.json | dependencies | ^19.2.4 | ❌ |
 | csbc-single-digital-gateway | packages/emails/package.json | devDependencies | ^19.2.4 | ❌ |
+| nr-cbr | frontend/package.json | dependencies | ^19.2.4 | ❌ |
 | nr-frep | frontend/package.json | dependencies | ^19.2.4 | ❌ |
 | nr-lexis | frontend/package.json | dependencies | ^19.2.4 | ❌ |
 | nr-rept | frontend/package.json | dependencies | ^19.2.4 | ❌ |
@@ -438,10 +475,11 @@
 | wildlife-incident-safety-reporting | package.json | devDependencies | ^19.2.4 | ❌ |
 | keycloak-example-apps | examples/oidc/public-dc/react/package.json | dependencies | ^19.2.5 | ❌ |
 | keycloak-example-apps | examples/oidc/public/react/package.json | dependencies | ^19.2.5 | ❌ |
-| nr-compliance-enforcement | backend/package.json | dependencies | ^19.2.5 | ❌ |
 | nr-fspts | frontend/package.json | dependencies | ^19.2.5 | ❌ |
 | nr-fta | frontend/package.json | dependencies | ^19.2.5 | ❌ |
+| nr-hbs | frontend/package.json | dependencies | ^19.2.5 | ❌ |
 | bcgw-replication-monitor | apps/web/package.json | dependencies | ^19.2.6 | ✅ |
+| queue-management | appointment-booking/package.json | dependencies | ^19.2.6 | ✅ |
 | common-hosted-workflow | docker-compose/sdg-mock-app/package.json | dependencies | ^19.2.6 | ❌ |
 | invasivesbc | app/package.json | dependencies | ^19.2.6 | ❌ |
 | Capstone-2026 | package.json | dependencies | ^19.2.7 | ✅ |
@@ -450,6 +488,9 @@
 | wps | mobile/asa-go/package.json | dependencies | ^19.2.7 | ❌ |
 | wps | web/apps/wps-web/package.json | dependencies | ^19.2.7 | ❌ |
 | wps | web/packages/ui/package.json | dependencies | ^19.2.7 | ❌ |
+| automated-statusing-tool | frontend/package.json | dependencies | ^19.2.8 | ✅ |
+| digital-trust-common-service | apps/ui/package.json | dependencies | ^19.2.8 | ✅ |
 | nr-nmp | frontend/package.json | dependencies | ^19.2.8 | ✅ |
 | common-hosted-workflow | external-ui/package.json | dependencies | ^19.2.8 | ❌ |
 | long-service-awards-admin | package.json | dependencies | ^19.2.8 | ❌ |
+| nr-fam | frontend/package.json | dependencies | ^19.2.8 | ❌ |

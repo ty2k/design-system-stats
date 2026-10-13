@@ -4,13 +4,27 @@ This is used to generate stats about the B.C. Design System's React component li
 
 Note that this will use your `gh` credentials to pull each repo using the library from GitHub, so you'll likely get rate-limited trying to run it too frequently.
 
+## Requirements
+
+You will need admin access on your computer to be able to install Node.js, `gh`, and `jq` to run this script. You might also need to [be a member of the `bcgov` organization on GitHub](https://developer.gov.bc.ca/docs/default/component/bc-developer-guide/use-github-in-bcgov/bc-government-organizations-in-github/#directions-to-sign-up-and-link-your-account-for-bcgov) but this script hasn't been tested in that context.
+
 ## Install
 
-### Install `gh` and `jq`
+### Install `gh`
+
+Install the [GitHub command line tool `gh`](https://cli.github.com/).
+
+### Install `jq`
+
+Install the [`jq` tool to parse JSON](https://jqlang.org/download/).
+
+### Install Node.js
+
+Install [Node.js](https://nodejs.org/en) (required to run `npm` scripts).
 
 ### Install `react-scanner`
 
-`npm install`
+With Node.js installed, run `npm install` in this project's root to install `react-scanner` (and any other dependencies listed in `package.json`).
 
 ## Run
 

@@ -10,7 +10,7 @@ WORK_DIR="$(mktemp -d)"
 RESULTS_DIR="$(mktemp -d)"
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-echo "Work dir:    $WORK_DIR"bash scan-org.sh adopting-repos.txt
+echo "Work dir:    $WORK_DIR"
 echo "Results dir: $RESULTS_DIR"
 echo ""
 

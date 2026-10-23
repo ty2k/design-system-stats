@@ -2,56 +2,60 @@
 
 | Component | Total Instances | Repos Using It |
 | --- | --- | --- |
-| Text | 2073 | 6 |
-| Heading | 1503 | 7 |
-| Button | 1475 | 25 |
-| Link | 1115 | 9 |
-| TextField | 429 | 22 |
-| ButtonGroup | 256 | 8 |
-| InlineAlert | 204 | 13 |
-| Checkbox | 172 | 13 |
-| TextArea | 143 | 8 |
-| Select | 130 | 14 |
-| Form | 124 | 9 |
-| NumberField | 116 | 2 |
-| Modal | 114 | 10 |
-| AlertDialog | 79 | 6 |
-| Radio | 76 | 13 |
-| Header | 63 | 52 |
-| ProgressCircle | 61 | 4 |
+| Button | 1243 | 26 |
+| Link | 415 | 9 |
+| TextField | 257 | 23 |
+| InlineAlert | 164 | 13 |
+| Text | 149 | 6 |
+| Checkbox | 136 | 14 |
+| TextArea | 118 | 9 |
+| Modal | 110 | 10 |
+| Select | 103 | 15 |
+| NumberField | 101 | 2 |
+| ButtonGroup | 98 | 8 |
+| Heading | 87 | 7 |
+| Radio | 80 | 13 |
+| Form | 77 | 10 |
+| AlertDialog | 75 | 6 |
+| Header | 63 | 49 |
 | DatePicker | 56 | 4 |
-| Footer | 51 | 45 |
-| RadioGroup | 42 | 13 |
+| Footer | 48 | 42 |
+| RadioGroup | 45 | 13 |
 | Dialog | 35 | 10 |
-| Callout | 27 | 4 |
-| CheckboxGroup | 20 | 8 |
-| Tooltip | 18 | 4 |
+| Callout | 31 | 5 |
+| CheckboxGroup | 21 | 8 |
+| Tooltip | 17 | 4 |
 | Switch | 16 | 6 |
-| SvgInfoIcon | 16 | 2 |
-| Accordion | 15 | 5 |
+| ProgressCircle | 16 | 5 |
+| Accordion | 16 | 6 |
+| SvgInfoIcon | 15 | 2 |
 | ToggleButton | 14 | 3 |
 | ProgressBar | 9 | 4 |
 | AccordionGroup | 8 | 4 |
 | ToggleButtonGroup | 7 | 3 |
+| SvgChevronDownIcon | 7 | 3 |
 | TagList | 6 | 5 |
 | TagGroup | 6 | 5 |
 | Separator | 6 | 2 |
+| AlertBanner | 6 | 4 |
 | TooltipTrigger | 5 | 4 |
 | SvgExclamationIcon | 5 | 3 |
 | SvgUpRightFromSquareIcon | 3 | 1 |
 | SvgExclamationCircleIcon | 3 | 1 |
+| SvgCloseIcon | 3 | 2 |
 | SvgChevronUpIcon | 3 | 2 |
-| SvgChevronDownIcon | 3 | 2 |
 | SvgCheckCircleIcon | 3 | 2 |
+| Subheader | 3 | 2 |
 | FooterLinks | 3 | 2 |
-| AlertBanner | 3 | 3 |
+| SvgChevronRightIcon | 2 | 1 |
+| SvgChevronLeftIcon | 2 | 1 |
+| MenuTrigger | 2 | 1 |
+| MenuItem | 2 | 1 |
+| Menu | 2 | 1 |
 | DialogTrigger | 2 | 1 |
-| SvgChevronRightIcon | 1 | 1 |
-| SvgChevronLeftIcon | 1 | 1 |
 | SvgCheckIcon | 1 | 1 |
 | SvgBcOutlineIcon | 1 | 1 |
 | SvgBcLogo | 1 | 1 |
-| Subheader | 1 | 1 |
 
 ## React versions for repos using the component library
 
@@ -67,7 +71,7 @@
 | soba | frontend/package.json | dependencies | 19.2.3 |
 | standard-graphemes | validator/frontend/package.json | dependencies | 19.2.6 |
 | adr | Apps/Registries/PublicBodies/Source/front-end/package.json | dependencies | 19.2.7 |
-| myss | Apps/MyssWebclient/package.json | dependencies | 19.3.0 |
+| myss | Apps/MyssWebclient/package.json | dependencies | 19.3.1 |
 | myss | Apps/MyssContent/package.json | dependencies | ^18.0.0 |
 | cst-feedback-pkg | package.json | peerDependencies | ^18.0.0 |
 | burn-severity-map | frontend/package.json | dependencies | ^18.2.0 |
@@ -83,6 +87,7 @@
 | quickstart-openshift-demo | frontend/package.json | dependencies | ^18.3.1 |
 | small-claims-assistant-prototype | web/package.json | dependencies | ^18.3.1 |
 | template-repository | app/client/package.json | dependencies | ^18.3.1 |
+| address-change | frontend/package.json | dependencies | ^19.0.0 |
 | common-notify | frontend/package.json | dependencies | ^19.0.0 |
 | CONN-TAP | app/frontend/package.json | dependencies | ^19.0.0 |
 | educ-azure-app | frontend/package.json | dependencies | ^19.0.0 |
@@ -92,15 +97,11 @@
 | nr-fop | frontend/package.json | dependencies | ^19.0.0 |
 | nr-ipm-platform | frontend/package.json | dependencies | ^19.0.0 |
 | nr-isp | frontend/package.json | dependencies | ^19.0.0 |
-| nr-newrepo | frontend/package.json | dependencies | ^19.0.0 |
-| nr-nodejs-provision-secret-openshift | frontend/package.json | dependencies | ^19.0.0 |
 | nr-nodejs-sample-openshift | frontend/package.json | dependencies | ^19.0.0 |
-| nr-nodejs-vault-agent-openshift | frontend/package.json | dependencies | ^19.0.0 |
 | nr-rec-signage | frontend/package.json | dependencies | ^19.0.0 |
 | nr-scs | frontend/package.json | dependencies | ^19.0.0 |
 | nr-tenures-api | frontend/package.json | dependencies | ^19.0.0 |
 | nr-timber-mark-api | frontend/package.json | dependencies | ^19.0.0 |
-| oscar-qs-knox | frontend/package.json | dependencies | ^19.0.0 |
 | pubcode | frontend/package.json | dependencies | ^19.0.0 |
 | qdemo | frontend/package.json | dependencies | ^19.0.0 |
 | quickstart-openshift | frontend/package.json | dependencies | ^19.0.0 |
@@ -213,13 +214,15 @@
 | adr | Apps/Registries/PublicBodies/Source/front-end/package.json | dependencies | 19.2.7 | ✅ |
 | csbc-single-digital-gateway | apps/citizen-portal-web/package.json | dependencies | 19.2.7 | ❌ |
 | csbc-single-digital-gateway | apps/platform-web/package.json | dependencies | 19.2.7 | ❌ |
+| csbc-single-digital-gateway | packages/documents/package.json | devDependencies | 19.2.7 | ❌ |
+| csbc-single-digital-gateway | packages/forms/package.json | devDependencies | 19.2.7 | ❌ |
 | csbc-single-digital-gateway | packages/react/package.json | devDependencies | 19.2.7 | ❌ |
 | csbc-single-digital-gateway | packages/ui/package.json | devDependencies | 19.2.7 | ❌ |
-| myss | Apps/MyssWebclient/package.json | dependencies | 19.3.0 | ✅ |
-| CONN-CCBC-portal | app/package.json | dependencies | 19.3.0 | ❌ |
 | nr-compliance-enforcement | backend/package.json | dependencies | 19.3.0 | ❌ |
-| nr-pies | package.json | dependencies | 19.3.0 | ❌ |
 | zeva2 | next/package.json | dependencies | 19.3.0 | ❌ |
+| myss | Apps/MyssWebclient/package.json | dependencies | 19.3.1 | ✅ |
+| CONN-CCBC-portal | app/package.json | dependencies | 19.3.1 | ❌ |
+| nr-pies | package.json | dependencies | 19.3.1 | ❌ |
 | bcew-monorepo | package.json | peerDependencies | catalog: | ❌ |
 | moh-am-themes | account-theme/extension/moh-keycloak-theme/src/main/resources/theme/moh-app-realm-account/account/src/package.json | dependencies | npm:@pika/react@^16.13.1 | ❌ |
 | moh-iam | keycloak-themes/keycloak-22-themes/keycloak-22-theme/extension/moh-keycloak-theme/src/main/resources/theme/moh-app-realm-account/account/src/package.json | dependencies | npm:@pika/react@^16.13.1 | ❌ |
@@ -392,9 +395,12 @@
 | workbc-chefs-cfms | packages/external-client/package.json | dependencies | ^18.3.1 | ❌ |
 | workbc-chefs-cfms | packages/static/package.json | dependencies | ^18.3.1 | ❌ |
 | bcparks-staff-portal | frontend/package.json | dependencies | ^19 | ❌ |
+| csbc-single-digital-gateway | packages/documents/package.json | peerDependencies | ^19 | ❌ |
 | csbc-single-digital-gateway | packages/emails/package.json | peerDependencies | ^19 | ❌ |
+| csbc-single-digital-gateway | packages/forms/package.json | peerDependencies | ^19 | ❌ |
 | csbc-single-digital-gateway | packages/react/package.json | peerDependencies | ^19 | ❌ |
 | csbc-single-digital-gateway | packages/ui/package.json | peerDependencies | ^19 | ❌ |
+| address-change | frontend/package.json | dependencies | ^19.0.0 | ✅ |
 | common-notify | frontend/package.json | dependencies | ^19.0.0 | ✅ |
 | CONN-TAP | app/frontend/package.json | dependencies | ^19.0.0 | ✅ |
 | educ-azure-app | frontend/package.json | dependencies | ^19.0.0 | ✅ |
@@ -404,15 +410,11 @@
 | nr-fop | frontend/package.json | dependencies | ^19.0.0 | ✅ |
 | nr-ipm-platform | frontend/package.json | dependencies | ^19.0.0 | ✅ |
 | nr-isp | frontend/package.json | dependencies | ^19.0.0 | ✅ |
-| nr-newrepo | frontend/package.json | dependencies | ^19.0.0 | ✅ |
-| nr-nodejs-provision-secret-openshift | frontend/package.json | dependencies | ^19.0.0 | ✅ |
 | nr-nodejs-sample-openshift | frontend/package.json | dependencies | ^19.0.0 | ✅ |
-| nr-nodejs-vault-agent-openshift | frontend/package.json | dependencies | ^19.0.0 | ✅ |
 | nr-rec-signage | frontend/package.json | dependencies | ^19.0.0 | ✅ |
 | nr-scs | frontend/package.json | dependencies | ^19.0.0 | ✅ |
 | nr-tenures-api | frontend/package.json | dependencies | ^19.0.0 | ✅ |
 | nr-timber-mark-api | frontend/package.json | dependencies | ^19.0.0 | ✅ |
-| oscar-qs-knox | frontend/package.json | dependencies | ^19.0.0 | ✅ |
 | pubcode | frontend/package.json | dependencies | ^19.0.0 | ✅ |
 | qdemo | frontend/package.json | dependencies | ^19.0.0 | ✅ |
 | quickstart-openshift | frontend/package.json | dependencies | ^19.0.0 | ✅ |
@@ -494,3 +496,4 @@
 | common-hosted-workflow | external-ui/package.json | dependencies | ^19.2.8 | ❌ |
 | long-service-awards-admin | package.json | dependencies | ^19.2.8 | ❌ |
 | nr-fam | frontend/package.json | dependencies | ^19.2.8 | ❌ |
+| nr-fam-isss | frontend/package.json | dependencies | ^19.2.8 | ❌ |

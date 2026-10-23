@@ -1,6 +1,7 @@
 bcgov/ABI-Dev-Ops-All-Projects
 bcgov/abi-landing-page
 bcgov/access-to-technology
+bcgov/address-change
 bcgov/adr
 bcgov/ag-pssg-sdlc
 bcgov/agri-nmp-msa
@@ -181,6 +182,7 @@ bcgov/nr-enmods-wr
 bcgov/nr-epd-digital-services
 bcgov/nr-epd-organics-info
 bcgov/nr-fam
+bcgov/nr-fam-isss
 bcgov/nr-fom
 bcgov/nr-fop
 bcgov/nr-frep
@@ -192,12 +194,9 @@ bcgov/nr-ipm-platform
 bcgov/nr-isp
 bcgov/nr-lexis
 bcgov/nr-mals
-bcgov/nr-newrepo
 bcgov/nr-ngx-component-lib
 bcgov/nr-nmp
-bcgov/nr-nodejs-provision-secret-openshift
 bcgov/nr-nodejs-sample-openshift
-bcgov/nr-nodejs-vault-agent-openshift
 bcgov/nr-pies
 bcgov/nr-rec-resources
 bcgov/nr-rec-signage
@@ -219,7 +218,6 @@ bcgov/onroutebc-policy-engine
 bcgov/openshift-launchpad-fe-react
 bcgov/openshift-notifications
 bcgov/orgbook-bc-api-docs
-bcgov/oscar-qs-knox
 bcgov/parks-adventure-mobile
 bcgov/PBGP
 bcgov/PIMS

@@ -246,6 +246,7 @@ bcgov/sae-virtual-display
 bcgov/sae-workbench
 bcgov/sample-mobile-app
 bcgov/sdd-database
+bcgov/sdg
 bcgov/sdx-reference-impl
 bcgov/sharepoint-knowledge-workbench
 bcgov/small-claims-assistant-prototype

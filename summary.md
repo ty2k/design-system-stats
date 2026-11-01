@@ -2,26 +2,26 @@
 
 | Component | Total Instances | Repos Using It |
 | --- | --- | --- |
-| Button | 1243 | 26 |
-| Link | 415 | 9 |
-| TextField | 257 | 23 |
-| InlineAlert | 164 | 13 |
+| Button | 1276 | 26 |
+| Link | 416 | 10 |
+| TextField | 259 | 23 |
+| InlineAlert | 174 | 13 |
 | Text | 149 | 6 |
 | Checkbox | 136 | 14 |
 | TextArea | 118 | 9 |
-| Modal | 110 | 10 |
-| Select | 103 | 15 |
+| Modal | 113 | 11 |
+| Select | 101 | 15 |
 | NumberField | 101 | 2 |
 | ButtonGroup | 98 | 8 |
-| Heading | 87 | 7 |
-| Radio | 80 | 13 |
-| Form | 77 | 10 |
-| AlertDialog | 75 | 6 |
-| Header | 63 | 49 |
+| Heading | 88 | 8 |
+| Radio | 82 | 13 |
+| AlertDialog | 77 | 7 |
+| Form | 76 | 9 |
+| Header | 63 | 48 |
 | DatePicker | 56 | 4 |
-| Footer | 48 | 42 |
-| RadioGroup | 45 | 13 |
-| Dialog | 35 | 10 |
+| Footer | 48 | 41 |
+| RadioGroup | 46 | 13 |
+| Dialog | 36 | 11 |
 | Callout | 31 | 5 |
 | CheckboxGroup | 21 | 8 |
 | Tooltip | 17 | 4 |
@@ -33,25 +33,25 @@
 | ProgressBar | 9 | 4 |
 | AccordionGroup | 8 | 4 |
 | ToggleButtonGroup | 7 | 3 |
+| TagList | 7 | 6 |
+| TagGroup | 7 | 6 |
 | SvgChevronDownIcon | 7 | 3 |
-| TagList | 6 | 5 |
-| TagGroup | 6 | 5 |
-| Separator | 6 | 2 |
+| Separator | 7 | 3 |
 | AlertBanner | 6 | 4 |
 | TooltipTrigger | 5 | 4 |
 | SvgExclamationIcon | 5 | 3 |
+| MenuItem | 5 | 2 |
 | SvgUpRightFromSquareIcon | 3 | 1 |
 | SvgExclamationCircleIcon | 3 | 1 |
 | SvgCloseIcon | 3 | 2 |
 | SvgChevronUpIcon | 3 | 2 |
 | SvgCheckCircleIcon | 3 | 2 |
 | Subheader | 3 | 2 |
+| MenuTrigger | 3 | 2 |
+| Menu | 3 | 2 |
 | FooterLinks | 3 | 2 |
 | SvgChevronRightIcon | 2 | 1 |
 | SvgChevronLeftIcon | 2 | 1 |
-| MenuTrigger | 2 | 1 |
-| MenuItem | 2 | 1 |
-| Menu | 2 | 1 |
 | DialogTrigger | 2 | 1 |
 | SvgCheckIcon | 1 | 1 |
 | SvgBcOutlineIcon | 1 | 1 |
@@ -69,9 +69,18 @@
 | Capstone-2026 | frontend/package.json | dependencies | 19.1.1 |
 | ai-adoption-document-intelligence | apps/frontend/package.json | dependencies | 19.2.1 |
 | soba | frontend/package.json | dependencies | 19.2.3 |
-| standard-graphemes | validator/frontend/package.json | dependencies | 19.2.6 |
 | adr | Apps/Registries/PublicBodies/Source/front-end/package.json | dependencies | 19.2.7 |
+| myss | Apps/MyssAdminWebclient/package.json | dependencies | 19.3.1 |
+| myss | Apps/MyssFormio/package.json | peerDependencies | 19.3.1 |
 | myss | Apps/MyssWebclient/package.json | dependencies | 19.3.1 |
+| myss | Apps/MyssWebCommon/package.json | peerDependencies | 19.3.1 |
+| standard-graphemes | validator/frontend/package.json | dependencies | 19.3.1 |
+| sdg | apps/portal-web/package.json | dependencies | catalog: |
+| sdg | packages/design-system/package.json | devDependencies | catalog: |
+| sdg | packages/design-system/package.json | peerDependencies | catalog: |
+| sdg | packages/sdg-header/package.json | devDependencies | catalog: |
+| sdg | packages/sdg-header/package.json | peerDependencies | catalog: |
+| sdg | tooling/typescript-config/package.json | devDependencies | catalog: |
 | myss | Apps/MyssContent/package.json | dependencies | ^18.0.0 |
 | cst-feedback-pkg | package.json | peerDependencies | ^18.0.0 |
 | burn-severity-map | frontend/package.json | dependencies | ^18.2.0 |
@@ -96,7 +105,6 @@
 | nr-acrfd-comments | .backup/frontend/package.json | dependencies | ^19.0.0 |
 | nr-fop | frontend/package.json | dependencies | ^19.0.0 |
 | nr-ipm-platform | frontend/package.json | dependencies | ^19.0.0 |
-| nr-isp | frontend/package.json | dependencies | ^19.0.0 |
 | nr-nodejs-sample-openshift | frontend/package.json | dependencies | ^19.0.0 |
 | nr-rec-signage | frontend/package.json | dependencies | ^19.0.0 |
 | nr-scs | frontend/package.json | dependencies | ^19.0.0 |
@@ -155,6 +163,8 @@
 | sso-startup-sample-project | client/package.json | dependencies | 16.13.1 | ❌ |
 | startup-sample-project-aws-serverless-TFC | client/package.json | dependencies | 16.13.1 | ❌ |
 | nr-brmb-agristability-pcfcontrols | Account.pcf/package.json | dependencies | 16.14.0 | ❌ |
+| nr-brmb-agristability-pcfcontrols | Enrolment.pcf/package.json | dependencies | 16.14.0 | ❌ |
+| nr-brmb-agristability-pcfcontrols | ReadOnlySubgrid.pcf/package.json | dependencies | 16.14.0 | ❌ |
 | LSB-SPFx-AdvancedSearch | package.json | dependencies | 17.0.1 | ❌ |
 | ag-pssg-sdlc | frontend-old/package.json | dependencies | 17.0.2 | ❌ |
 | ag-pssg-sdlc | frontend/package.json | dependencies | 17.0.2 | ❌ |
@@ -186,6 +196,7 @@
 | digital-marketplace-next | design/package.json | dependencies | 18.3.1 | ✅ |
 | citz-imb-sso-react | package.json | dependencies | 18.3.1 | ❌ |
 | digital_marketplace | package.json | dependencies | 18.3.1 | ❌ |
+| EPIC.common | epic.theme/package.json | devDependencies | 18.3.1 | ❌ |
 | gcpe-MediaHub | gcpe-MediaHub/gcpe-mediahub.client/package.json | dependencies | 18.3.1 | ❌ |
 | moh-bcer | packages/bcer-data-portal/app/package.json | dependencies | 18.3.1 | ❌ |
 | nr-compliance-enforcement | frontend/package.json | dependencies | 18.3.1 | ❌ |
@@ -210,7 +221,6 @@
 | keycloak-example-apps | examples/oidc/css-api/nextjs/package.json | dependencies | 19.2.5 | ❌ |
 | keycloak-example-apps | examples/oidc/service-account/nextjs/next-app/package.json | dependencies | 19.2.5 | ❌ |
 | keycloak-example-apps | playground/public-spa/package.json | dependencies | 19.2.5 | ❌ |
-| standard-graphemes | validator/frontend/package.json | dependencies | 19.2.6 | ✅ |
 | adr | Apps/Registries/PublicBodies/Source/front-end/package.json | dependencies | 19.2.7 | ✅ |
 | csbc-single-digital-gateway | apps/citizen-portal-web/package.json | dependencies | 19.2.7 | ❌ |
 | csbc-single-digital-gateway | apps/platform-web/package.json | dependencies | 19.2.7 | ❌ |
@@ -220,9 +230,19 @@
 | csbc-single-digital-gateway | packages/ui/package.json | devDependencies | 19.2.7 | ❌ |
 | nr-compliance-enforcement | backend/package.json | dependencies | 19.3.0 | ❌ |
 | zeva2 | next/package.json | dependencies | 19.3.0 | ❌ |
+| myss | Apps/MyssAdminWebclient/package.json | dependencies | 19.3.1 | ✅ |
+| myss | Apps/MyssFormio/package.json | peerDependencies | 19.3.1 | ✅ |
 | myss | Apps/MyssWebclient/package.json | dependencies | 19.3.1 | ✅ |
+| myss | Apps/MyssWebCommon/package.json | peerDependencies | 19.3.1 | ✅ |
+| standard-graphemes | validator/frontend/package.json | dependencies | 19.3.1 | ✅ |
 | CONN-CCBC-portal | app/package.json | dependencies | 19.3.1 | ❌ |
 | nr-pies | package.json | dependencies | 19.3.1 | ❌ |
+| sdg | apps/portal-web/package.json | dependencies | catalog: | ✅ |
+| sdg | packages/design-system/package.json | devDependencies | catalog: | ✅ |
+| sdg | packages/design-system/package.json | peerDependencies | catalog: | ✅ |
+| sdg | packages/sdg-header/package.json | devDependencies | catalog: | ✅ |
+| sdg | packages/sdg-header/package.json | peerDependencies | catalog: | ✅ |
+| sdg | tooling/typescript-config/package.json | devDependencies | catalog: | ✅ |
 | bcew-monorepo | package.json | peerDependencies | catalog: | ❌ |
 | moh-am-themes | account-theme/extension/moh-keycloak-theme/src/main/resources/theme/moh-app-realm-account/account/src/package.json | dependencies | npm:@pika/react@^16.13.1 | ❌ |
 | moh-iam | keycloak-themes/keycloak-22-themes/keycloak-22-theme/extension/moh-keycloak-theme/src/main/resources/theme/moh-app-realm-account/account/src/package.json | dependencies | npm:@pika/react@^16.13.1 | ❌ |
@@ -237,7 +257,6 @@
 | elmsd-nodejs | packages/eslint-config/package.json | peerDependencies | ^16.8.0 || ^17.0.0 || ^18.0.0 | ❌ |
 | elmsd-eslint-config | package.json | peerDependencies | ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 | ❌ |
 | sae-virtual-display | hub/ui/package.json | dependencies | ^16.10.0 | ❌ |
-| agri-nmp-msa | frontend/package.json | dependencies | ^16.12.0 | ❌ |
 | common-components-catalogue | package.json | dependencies | ^16.12.0 | ❌ |
 | jag-ecrc | src/ecrc-frontend/package.json | dependencies | ^16.12.0 | ❌ |
 | openshift-launchpad-fe-react | package.json | dependencies | ^16.12.0 | ❌ |
@@ -251,6 +270,7 @@
 | csit-backstage-poc | plugins/catalog-dataset/package.json | peerDependencies | ^16.13.1 || ^17.0.0 || ^18.0.0 | ❌ |
 | csit-backstage-poc | plugins/catalog-openapi/package.json | devDependencies | ^16.13.1 || ^17.0.0 || ^18.0.0 | ❌ |
 | csit-backstage-poc | plugins/catalog-openapi/package.json | peerDependencies | ^16.13.1 || ^17.0.0 || ^18.0.0 | ❌ |
+| agri-nmp-msa | frontend/package.json | dependencies | ^16.14.0 | ❌ |
 | cas-template-app | packages/sso-react/package.json | devDependencies | ^16.14.0 | ❌ |
 | crt | client/package.json | dependencies | ^16.14.0 | ❌ |
 | ECC-OFM-D365 | OFM.Infrastructure.PCF/Controls/PAGridCustomizer/package.json | dependencies | ^16.14.0 | ❌ |
@@ -305,7 +325,6 @@
 | biohubbc-utils | utils/users/package.json | dependencies | ^18.2.0 | ❌ |
 | cas-cif | app/package.json | dependencies | ^18.2.0 | ❌ |
 | citz-imb-gcp-pathfinder | src/webApp/package.json | dependencies | ^18.2.0 | ❌ |
-| cthub | frontend/package.json | dependencies | ^18.2.0 | ❌ |
 | digital-talent | apps/hms-app/package.json | dependencies | ^18.2.0 | ❌ |
 | elmsd-nodejs | packages/eslint-config/package.json | devDependencies | ^18.2.0 | ❌ |
 | epic-public | package.json | dependencies | ^18.2.0 | ❌ |
@@ -366,7 +385,7 @@
 | bcparks.ca | src/cms/package.json | dependencies | ^18.3.1 | ❌ |
 | bcparks.ca | src/gatsby/package.json | dependencies | ^18.3.1 | ❌ |
 | easier-tool | client/package.json | dependencies | ^18.3.1 | ❌ |
-| EPIC.common | epic.theme/package.json | dependencies | ^18.3.1 | ❌ |
+| EPIC.common | epic.theme/package.json | peerDependencies | ^18.3.1 | ❌ |
 | EPIC.themeLib | package.json | dependencies | ^18.3.1 | ❌ |
 | EPIC.track | epictrack-web/package.json | dependencies | ^18.3.1 | ❌ |
 | gss-dev-startup | demo-frontend/package.json | dependencies | ^18.3.1 | ❌ |
@@ -409,7 +428,6 @@
 | nr-acrfd-comments | .backup/frontend/package.json | dependencies | ^19.0.0 | ✅ |
 | nr-fop | frontend/package.json | dependencies | ^19.0.0 | ✅ |
 | nr-ipm-platform | frontend/package.json | dependencies | ^19.0.0 | ✅ |
-| nr-isp | frontend/package.json | dependencies | ^19.0.0 | ✅ |
 | nr-nodejs-sample-openshift | frontend/package.json | dependencies | ^19.0.0 | ✅ |
 | nr-rec-signage | frontend/package.json | dependencies | ^19.0.0 | ✅ |
 | nr-scs | frontend/package.json | dependencies | ^19.0.0 | ✅ |
@@ -420,6 +438,7 @@
 | quickstart-openshift | frontend/package.json | dependencies | ^19.0.0 | ✅ |
 | sdx-reference-impl | frontend/package.json | dependencies | ^19.0.0 | ✅ |
 | common-hosted-workflow | doc-site/package.json | dependencies | ^19.0.0 | ❌ |
+| cthub | frontend/package.json | dependencies | ^19.0.0 | ❌ |
 | ditp-showcase-creator-ui | package.json | dependencies | ^19.0.0 | ❌ |
 | fds-design | package.json | dependencies | ^19.0.0 | ❌ |
 | fds-design | package.json | peerDependencies | ^19.0.0 | ❌ |
@@ -469,6 +488,7 @@
 | csbc-single-digital-gateway | packages/emails/package.json | devDependencies | ^19.2.4 | ❌ |
 | nr-cbr | frontend/package.json | dependencies | ^19.2.4 | ❌ |
 | nr-frep | frontend/package.json | dependencies | ^19.2.4 | ❌ |
+| nr-isp | frontend/package.json | dependencies | ^19.2.4 | ❌ |
 | nr-lexis | frontend/package.json | dependencies | ^19.2.4 | ❌ |
 | nr-rept | frontend/package.json | dependencies | ^19.2.4 | ❌ |
 | nr-ticdi | frontend/package.json | dependencies | ^19.2.4 | ❌ |

@@ -65,6 +65,7 @@ bcgov/common-hosted-workflow
 bcgov/common-notify
 bcgov/CONN-CCBC-portal
 bcgov/CONN-TAP
+bcgov/conservation-prioritization
 bcgov/crt
 bcgov/csa
 bcgov/csbc-nodejs-starter
@@ -157,7 +158,6 @@ bcgov/mdms-device-signout-app
 bcgov/mds
 bcgov/mds-startup-sample-project
 bcgov/met-formio
-bcgov/metadata-curator
 bcgov/MOH_TeamBasedCare
 bcgov/moh-am-themes
 bcgov/moh-bcer
@@ -188,6 +188,7 @@ bcgov/nr-fop
 bcgov/nr-frep
 bcgov/nr-fspts
 bcgov/nr-fta
+bcgov/nr-gbms
 bcgov/nr-hbs
 bcgov/nr-ilcr
 bcgov/nr-ipm-platform
@@ -231,7 +232,6 @@ bcgov/pubcode
 bcgov/qdemo
 bcgov/qs1
 bcgov/queue-management
-bcgov/quickstart-azure-containers
 bcgov/quickstart-natual-resource-app
 bcgov/quickstart-openshift
 bcgov/quickstart-openshift-demo

@@ -2,56 +2,56 @@
 
 | Component | Total Instances | Repos Using It |
 | --- | --- | --- |
-| Button | 1276 | 26 |
-| Link | 416 | 10 |
-| TextField | 259 | 23 |
-| InlineAlert | 174 | 13 |
+| Button | 1322 | 26 |
+| Link | 417 | 11 |
+| TextField | 273 | 23 |
+| InlineAlert | 194 | 14 |
 | Text | 149 | 6 |
-| Checkbox | 136 | 14 |
+| Checkbox | 133 | 14 |
 | TextArea | 118 | 9 |
-| Modal | 113 | 11 |
-| Select | 101 | 15 |
+| Modal | 118 | 12 |
+| Select | 102 | 16 |
 | NumberField | 101 | 2 |
 | ButtonGroup | 98 | 8 |
 | Heading | 88 | 8 |
 | Radio | 82 | 13 |
-| AlertDialog | 77 | 7 |
+| AlertDialog | 82 | 8 |
 | Form | 76 | 9 |
 | Header | 63 | 48 |
 | DatePicker | 56 | 4 |
 | Footer | 48 | 41 |
 | RadioGroup | 46 | 13 |
 | Dialog | 36 | 11 |
-| Callout | 31 | 5 |
-| CheckboxGroup | 21 | 8 |
-| Tooltip | 17 | 4 |
-| Switch | 16 | 6 |
-| ProgressCircle | 16 | 5 |
+| Callout | 32 | 6 |
+| CheckboxGroup | 20 | 8 |
+| Tooltip | 18 | 5 |
+| ProgressCircle | 18 | 5 |
 | Accordion | 16 | 6 |
 | SvgInfoIcon | 15 | 2 |
 | ToggleButton | 14 | 3 |
+| Switch | 14 | 6 |
+| Separator | 10 | 4 |
 | ProgressBar | 9 | 4 |
+| MenuItem | 8 | 2 |
+| AlertBanner | 8 | 4 |
 | AccordionGroup | 8 | 4 |
 | ToggleButtonGroup | 7 | 3 |
 | TagList | 7 | 6 |
 | TagGroup | 7 | 6 |
 | SvgChevronDownIcon | 7 | 3 |
-| Separator | 7 | 3 |
-| AlertBanner | 6 | 4 |
-| TooltipTrigger | 5 | 4 |
-| SvgExclamationIcon | 5 | 3 |
-| MenuItem | 5 | 2 |
+| TooltipTrigger | 6 | 5 |
+| SvgExclamationIcon | 6 | 4 |
+| MenuTrigger | 4 | 2 |
+| Menu | 4 | 2 |
 | SvgUpRightFromSquareIcon | 3 | 1 |
 | SvgExclamationCircleIcon | 3 | 1 |
 | SvgCloseIcon | 3 | 2 |
 | SvgChevronUpIcon | 3 | 2 |
+| SvgChevronRightIcon | 3 | 2 |
+| SvgChevronLeftIcon | 3 | 2 |
 | SvgCheckCircleIcon | 3 | 2 |
 | Subheader | 3 | 2 |
-| MenuTrigger | 3 | 2 |
-| Menu | 3 | 2 |
 | FooterLinks | 3 | 2 |
-| SvgChevronRightIcon | 2 | 1 |
-| SvgChevronLeftIcon | 2 | 1 |
 | DialogTrigger | 2 | 1 |
 | SvgCheckIcon | 1 | 1 |
 | SvgBcOutlineIcon | 1 | 1 |
@@ -104,6 +104,7 @@
 | gis-pantry | scripts/stac-react-demo/package.json | dependencies | ^19.0.0 |
 | nr-acrfd-comments | .backup/frontend/package.json | dependencies | ^19.0.0 |
 | nr-fop | frontend/package.json | dependencies | ^19.0.0 |
+| nr-gbms | frontend/package.json | dependencies | ^19.0.0 |
 | nr-ipm-platform | frontend/package.json | dependencies | ^19.0.0 |
 | nr-nodejs-sample-openshift | frontend/package.json | dependencies | ^19.0.0 |
 | nr-rec-signage | frontend/package.json | dependencies | ^19.0.0 |
@@ -125,14 +126,13 @@
 | cisb-referral | referral-app/package.json | dependencies | ^19.2.0 |
 | csa | frontend/package.json | dependencies | ^19.2.0 |
 | ai-hub-tracking | tenant-onboarding-portal/frontend/package.json | dependencies | ^19.2.4 |
-| bcgw-replication-monitor | apps/web/package.json | dependencies | ^19.2.6 |
 | queue-management | appointment-booking/package.json | dependencies | ^19.2.6 |
 | Capstone-2026 | package.json | dependencies | ^19.2.7 |
 | Capstone-2026 | package.json | devDependencies | ^19.2.7 |
-| quickstart-azure-containers | frontend/package.json | dependencies | ^19.2.7 |
 | automated-statusing-tool | frontend/package.json | dependencies | ^19.2.8 |
-| digital-trust-common-service | apps/ui/package.json | dependencies | ^19.2.8 |
-| nr-nmp | frontend/package.json | dependencies | ^19.2.8 |
+| bcgw-replication-monitor | apps/web/package.json | dependencies | ^19.3.1 |
+| digital-trust-common-service | apps/ui/package.json | dependencies | ^19.3.1 |
+| nr-nmp | frontend/package.json | dependencies | ^19.3.1 |
 
 ## React versions for all `bcgov` repos
 
@@ -205,7 +205,6 @@
 | tno | app/subscriber/package.json | dependencies | 18.3.1 | ❌ |
 | citz-dss-dbumt | frontend/package.json | dependencies | 19.0.0 | ✅ |
 | citz-imb-ai | web/frontend/package.json | dependencies | 19.1.0 | ❌ |
-| developer-experience-team | DevExMobileTestApp/package.json | dependencies | 19.1.0 | ❌ |
 | nextjs-demo | package.json | dependencies | 19.1.0 | ❌ |
 | Capstone-2026 | frontend/package.json | dependencies | 19.1.1 | ✅ |
 | ehpr2 | apps/web/package.json | dependencies | 19.1.2 | ❌ |
@@ -228,6 +227,7 @@
 | csbc-single-digital-gateway | packages/forms/package.json | devDependencies | 19.2.7 | ❌ |
 | csbc-single-digital-gateway | packages/react/package.json | devDependencies | 19.2.7 | ❌ |
 | csbc-single-digital-gateway | packages/ui/package.json | devDependencies | 19.2.7 | ❌ |
+| developer-experience-team | DevExMobileTestApp/package.json | dependencies | 19.3.0 | ❌ |
 | nr-compliance-enforcement | backend/package.json | dependencies | 19.3.0 | ❌ |
 | zeva2 | next/package.json | dependencies | 19.3.0 | ❌ |
 | myss | Apps/MyssAdminWebclient/package.json | dependencies | 19.3.1 | ✅ |
@@ -427,6 +427,7 @@
 | gis-pantry | scripts/stac-react-demo/package.json | dependencies | ^19.0.0 | ✅ |
 | nr-acrfd-comments | .backup/frontend/package.json | dependencies | ^19.0.0 | ✅ |
 | nr-fop | frontend/package.json | dependencies | ^19.0.0 | ✅ |
+| nr-gbms | frontend/package.json | dependencies | ^19.0.0 | ✅ |
 | nr-ipm-platform | frontend/package.json | dependencies | ^19.0.0 | ✅ |
 | nr-nodejs-sample-openshift | frontend/package.json | dependencies | ^19.0.0 | ✅ |
 | nr-rec-signage | frontend/package.json | dependencies | ^19.0.0 | ✅ |
@@ -455,6 +456,7 @@
 | nr-enmods-wr | frontend/package.json | dependencies | ^19.1.0 | ✅ |
 | sdd-database | package.json | dependencies | ^19.1.0 | ✅ |
 | caregiver-portal | caregiver-portal/package.json | dependencies | ^19.1.0 | ❌ |
+| conservation-prioritization | frontend/package.json | dependencies | ^19.1.0 | ❌ |
 | nr-csp | frontend/package.json | dependencies | ^19.1.0 | ❌ |
 | prp-map | package.json | peerDependencies | ^19.1.0 | ❌ |
 | quickstart-natual-resource-app | frontend/package.json | dependencies | ^19.1.0 | ❌ |
@@ -500,20 +502,19 @@
 | nr-fspts | frontend/package.json | dependencies | ^19.2.5 | ❌ |
 | nr-fta | frontend/package.json | dependencies | ^19.2.5 | ❌ |
 | nr-hbs | frontend/package.json | dependencies | ^19.2.5 | ❌ |
-| bcgw-replication-monitor | apps/web/package.json | dependencies | ^19.2.6 | ✅ |
 | queue-management | appointment-booking/package.json | dependencies | ^19.2.6 | ✅ |
 | common-hosted-workflow | docker-compose/sdg-mock-app/package.json | dependencies | ^19.2.6 | ❌ |
 | invasivesbc | app/package.json | dependencies | ^19.2.6 | ❌ |
 | Capstone-2026 | package.json | dependencies | ^19.2.7 | ✅ |
 | Capstone-2026 | package.json | devDependencies | ^19.2.7 | ✅ |
-| quickstart-azure-containers | frontend/package.json | dependencies | ^19.2.7 | ✅ |
 | wps | mobile/asa-go/package.json | dependencies | ^19.2.7 | ❌ |
 | wps | web/apps/wps-web/package.json | dependencies | ^19.2.7 | ❌ |
 | wps | web/packages/ui/package.json | dependencies | ^19.2.7 | ❌ |
 | automated-statusing-tool | frontend/package.json | dependencies | ^19.2.8 | ✅ |
-| digital-trust-common-service | apps/ui/package.json | dependencies | ^19.2.8 | ✅ |
-| nr-nmp | frontend/package.json | dependencies | ^19.2.8 | ✅ |
 | common-hosted-workflow | external-ui/package.json | dependencies | ^19.2.8 | ❌ |
 | long-service-awards-admin | package.json | dependencies | ^19.2.8 | ❌ |
 | nr-fam | frontend/package.json | dependencies | ^19.2.8 | ❌ |
 | nr-fam-isss | frontend/package.json | dependencies | ^19.2.8 | ❌ |
+| bcgw-replication-monitor | apps/web/package.json | dependencies | ^19.3.1 | ✅ |
+| digital-trust-common-service | apps/ui/package.json | dependencies | ^19.3.1 | ✅ |
+| nr-nmp | frontend/package.json | dependencies | ^19.3.1 | ✅ |

@@ -131,6 +131,7 @@ bcgov/gdx-agreements-tracker
 bcgov/gis-pantry
 bcgov/gss-dev-startup
 bcgov/hcap
+bcgov/healthgateway
 bcgov/hets
 bcgov/HMCR
 bcgov/HOUS-Interactive-BCBC
@@ -190,6 +191,7 @@ bcgov/nr-fspts
 bcgov/nr-fta
 bcgov/nr-gbms
 bcgov/nr-hbs
+bcgov/nr-hbs-client-api
 bcgov/nr-ilcr
 bcgov/nr-ipm-platform
 bcgov/nr-isp

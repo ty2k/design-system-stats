@@ -2,50 +2,50 @@
 
 | Component | Total Instances | Repos Using It |
 | --- | --- | --- |
-| Button | 1322 | 26 |
-| Link | 417 | 11 |
-| TextField | 273 | 23 |
-| InlineAlert | 194 | 14 |
+| Button | 1408 | 26 |
+| Link | 424 | 11 |
+| TextField | 295 | 23 |
+| InlineAlert | 228 | 14 |
+| Checkbox | 151 | 15 |
 | Text | 149 | 6 |
-| Checkbox | 133 | 14 |
-| TextArea | 118 | 9 |
-| Modal | 118 | 12 |
-| Select | 102 | 16 |
+| TextArea | 123 | 10 |
+| Select | 122 | 16 |
+| Modal | 122 | 12 |
 | NumberField | 101 | 2 |
 | ButtonGroup | 98 | 8 |
-| Heading | 88 | 8 |
-| Radio | 82 | 13 |
-| AlertDialog | 82 | 8 |
-| Form | 76 | 9 |
-| Header | 63 | 48 |
-| DatePicker | 56 | 4 |
-| Footer | 48 | 41 |
-| RadioGroup | 46 | 13 |
-| Dialog | 36 | 11 |
+| Radio | 91 | 13 |
+| Heading | 89 | 9 |
+| AlertDialog | 85 | 8 |
+| Form | 84 | 9 |
+| Header | 64 | 49 |
+| DatePicker | 60 | 6 |
+| RadioGroup | 50 | 13 |
+| Footer | 49 | 42 |
+| Dialog | 37 | 11 |
 | Callout | 32 | 6 |
-| CheckboxGroup | 20 | 8 |
+| CheckboxGroup | 26 | 9 |
+| Accordion | 25 | 7 |
+| ProgressCircle | 21 | 5 |
 | Tooltip | 18 | 5 |
-| ProgressCircle | 18 | 5 |
-| Accordion | 16 | 6 |
+| MenuItem | 17 | 2 |
+| Switch | 15 | 7 |
 | SvgInfoIcon | 15 | 2 |
-| ToggleButton | 14 | 3 |
-| Switch | 14 | 6 |
-| Separator | 10 | 4 |
+| AccordionGroup | 14 | 5 |
+| ToggleButton | 12 | 3 |
+| Separator | 12 | 4 |
+| TagList | 9 | 6 |
+| TagGroup | 9 | 6 |
 | ProgressBar | 9 | 4 |
-| MenuItem | 8 | 2 |
+| MenuTrigger | 9 | 3 |
+| Menu | 9 | 3 |
+| SvgChevronDownIcon | 8 | 4 |
 | AlertBanner | 8 | 4 |
-| AccordionGroup | 8 | 4 |
-| ToggleButtonGroup | 7 | 3 |
-| TagList | 7 | 6 |
-| TagGroup | 7 | 6 |
-| SvgChevronDownIcon | 7 | 3 |
 | TooltipTrigger | 6 | 5 |
+| ToggleButtonGroup | 6 | 3 |
 | SvgExclamationIcon | 6 | 4 |
-| MenuTrigger | 4 | 2 |
-| Menu | 4 | 2 |
+| SvgCloseIcon | 4 | 3 |
 | SvgUpRightFromSquareIcon | 3 | 1 |
 | SvgExclamationCircleIcon | 3 | 1 |
-| SvgCloseIcon | 3 | 2 |
 | SvgChevronUpIcon | 3 | 2 |
 | SvgChevronRightIcon | 3 | 2 |
 | SvgChevronLeftIcon | 3 | 2 |
@@ -56,6 +56,8 @@
 | SvgCheckIcon | 1 | 1 |
 | SvgBcOutlineIcon | 1 | 1 |
 | SvgBcLogo | 1 | 1 |
+| MenuSectionHeader | 1 | 1 |
+| MenuSection | 1 | 1 |
 
 ## React versions for repos using the component library
 
@@ -75,6 +77,7 @@
 | myss | Apps/MyssWebclient/package.json | dependencies | 19.3.1 |
 | myss | Apps/MyssWebCommon/package.json | peerDependencies | 19.3.1 |
 | standard-graphemes | validator/frontend/package.json | dependencies | 19.3.1 |
+| sdg | apps/console-web/package.json | dependencies | catalog: |
 | sdg | apps/portal-web/package.json | dependencies | catalog: |
 | sdg | packages/design-system/package.json | devDependencies | catalog: |
 | sdg | packages/design-system/package.json | peerDependencies | catalog: |
@@ -105,6 +108,7 @@
 | nr-acrfd-comments | .backup/frontend/package.json | dependencies | ^19.0.0 |
 | nr-fop | frontend/package.json | dependencies | ^19.0.0 |
 | nr-gbms | frontend/package.json | dependencies | ^19.0.0 |
+| nr-hbs-client-api | frontend/package.json | dependencies | ^19.0.0 |
 | nr-ipm-platform | frontend/package.json | dependencies | ^19.0.0 |
 | nr-nodejs-sample-openshift | frontend/package.json | dependencies | ^19.0.0 |
 | nr-rec-signage | frontend/package.json | dependencies | ^19.0.0 |
@@ -201,8 +205,6 @@
 | moh-bcer | packages/bcer-data-portal/app/package.json | dependencies | 18.3.1 | ❌ |
 | nr-compliance-enforcement | frontend/package.json | dependencies | 18.3.1 | ❌ |
 | PIMS | react-app/package.json | dependencies | 18.3.1 | ❌ |
-| tno | app/editor/package.json | dependencies | 18.3.1 | ❌ |
-| tno | app/subscriber/package.json | dependencies | 18.3.1 | ❌ |
 | citz-dss-dbumt | frontend/package.json | dependencies | 19.0.0 | ✅ |
 | citz-imb-ai | web/frontend/package.json | dependencies | 19.1.0 | ❌ |
 | nextjs-demo | package.json | dependencies | 19.1.0 | ❌ |
@@ -228,6 +230,7 @@
 | csbc-single-digital-gateway | packages/react/package.json | devDependencies | 19.2.7 | ❌ |
 | csbc-single-digital-gateway | packages/ui/package.json | devDependencies | 19.2.7 | ❌ |
 | developer-experience-team | DevExMobileTestApp/package.json | dependencies | 19.3.0 | ❌ |
+| healthgateway | Apps/WebClient/src/ClientApp/package.json | dependencies | 19.3.0 | ❌ |
 | nr-compliance-enforcement | backend/package.json | dependencies | 19.3.0 | ❌ |
 | zeva2 | next/package.json | dependencies | 19.3.0 | ❌ |
 | myss | Apps/MyssAdminWebclient/package.json | dependencies | 19.3.1 | ✅ |
@@ -237,6 +240,8 @@
 | standard-graphemes | validator/frontend/package.json | dependencies | 19.3.1 | ✅ |
 | CONN-CCBC-portal | app/package.json | dependencies | 19.3.1 | ❌ |
 | nr-pies | package.json | dependencies | 19.3.1 | ❌ |
+| tno | app/package.json | dependencies | 19.3.1 | ❌ |
+| sdg | apps/console-web/package.json | dependencies | catalog: | ✅ |
 | sdg | apps/portal-web/package.json | dependencies | catalog: | ✅ |
 | sdg | packages/design-system/package.json | devDependencies | catalog: | ✅ |
 | sdg | packages/design-system/package.json | peerDependencies | catalog: | ✅ |
@@ -408,7 +413,6 @@
 | sso-docs | package.json | dependencies | ^18.3.1 | ❌ |
 | sso-rag | ui/package.json | dependencies | ^18.3.1 | ❌ |
 | staff-update-form | client/package.json | dependencies | ^18.3.1 | ❌ |
-| tno | libs/npm/core/package.json | peerDependencies | ^18.3.1 | ❌ |
 | WetpaddlersV2 | app/package.json | dependencies | ^18.3.1 | ❌ |
 | workbc-chefs-cfms | packages/admin-client/package.json | dependencies | ^18.3.1 | ❌ |
 | workbc-chefs-cfms | packages/external-client/package.json | dependencies | ^18.3.1 | ❌ |
@@ -428,6 +432,7 @@
 | nr-acrfd-comments | .backup/frontend/package.json | dependencies | ^19.0.0 | ✅ |
 | nr-fop | frontend/package.json | dependencies | ^19.0.0 | ✅ |
 | nr-gbms | frontend/package.json | dependencies | ^19.0.0 | ✅ |
+| nr-hbs-client-api | frontend/package.json | dependencies | ^19.0.0 | ✅ |
 | nr-ipm-platform | frontend/package.json | dependencies | ^19.0.0 | ✅ |
 | nr-nodejs-sample-openshift | frontend/package.json | dependencies | ^19.0.0 | ✅ |
 | nr-rec-signage | frontend/package.json | dependencies | ^19.0.0 | ✅ |
@@ -495,7 +500,6 @@
 | nr-rept | frontend/package.json | dependencies | ^19.2.4 | ❌ |
 | nr-ticdi | frontend/package.json | dependencies | ^19.2.4 | ❌ |
 | sso-playground | package.json | dependencies | ^19.2.4 | ❌ |
-| sso-requests | app/package.json | dependencies | ^19.2.4 | ❌ |
 | wildlife-incident-safety-reporting | package.json | devDependencies | ^19.2.4 | ❌ |
 | keycloak-example-apps | examples/oidc/public-dc/react/package.json | dependencies | ^19.2.5 | ❌ |
 | keycloak-example-apps | examples/oidc/public/react/package.json | dependencies | ^19.2.5 | ❌ |
@@ -518,3 +522,4 @@
 | bcgw-replication-monitor | apps/web/package.json | dependencies | ^19.3.1 | ✅ |
 | digital-trust-common-service | apps/ui/package.json | dependencies | ^19.3.1 | ✅ |
 | nr-nmp | frontend/package.json | dependencies | ^19.3.1 | ✅ |
+| sso-requests | app/package.json | dependencies | ^19.3.1 | ❌ |
